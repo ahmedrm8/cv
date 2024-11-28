@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    
+    <button>click</button>
+
+<script>
+
+    $('button').click(function(){
+
+        var url = 'server.php?id=4&name=ahmed';
+        // get request
+        $.get(url , function(data){
+            console.log(data);
+        })
+
+
+    })
+
+
+
+</script>
+</body>
+</html>

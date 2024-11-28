@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+
+    <button>click</button>
+   
+<script>
+
+    console.log('one');
+    console.log('two');
+
+    $('button').click(function(){
+        console.log('three');
+    })
+
+    console.log('four');
+
+    setTimeout(function(){
+        console.log('five');
+    } , 1000)
+
+    $('button').css('font-size' , '50px')
+
+</script>
+
+
+</body>
+</html>
